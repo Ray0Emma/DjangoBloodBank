@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+  <style>
+    .btn-outline-primary {
+      color: #14182d !important;
+      border-color: #14182d !important;
+    }
+
+    .btn-outline-primary:hover,
+    .btn.btn-outline-primary:focus {
+      outline: 0 !important;
+      box-shadow: none;
+      color: #fff !important;
+      background: linear-gradient(to right, #14182d, #14182d);
+      border-color: #14182d !important;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(to right, #e85745, #e85745);
+      border-color: #e85745 !important;
+    }
+
+    .btn:hover,
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn.btn-primary:focus {
+      outline: 0 !important;
+      box-shadow: none;
+      color: #fff !important;
+      border-color: none !important;
+    }
+
+    .text-pr {
+      color: #7577a6 !important;
+    }
+
+    h0 {
+      font-size: 45pt;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+
+  <section id="whoami">
+    <div class="container-lg ">
+      <div class="row  justify-content-between ">
+        <div class="col-md-6  text-center text-md-start d-flex align-self-center">
+          <div>
+            <h0 class=" fw-bold lh-1 ">
+              Bring a <br> life back to power
+              <span class="bg-primary  mt-1  d-block bar-primary ms-auto me-auto ms-md-0 "></span>
+            </h0>
+            <p class="text-pr lh-lg fw-lighter fs-6 ">
+              <span class="d-none d-lg-block d-md-block">
+                Make blood donation your responsibility
+              </span>
+            </p>
+            <a href="/donor/donorlogin" class="mt-lg-5 mt-3 btn btn-outline-primary py-2 px-2 px-sm-4">
+              Donate
+            </a>
+            <a href="/patient/patientlogin" class=" mt-lg-5 mt-3 ms-2 btn btn-primary py-2 px-2 px-sm-4" target="_blank"
+              rel="noopener">
+              Find Donor
+            </a>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-5  text-center d-none d-lg-block d-md-block ">
+          <img class="img-fluid" src='{% static "image/heart-hero.png" %}' alt="Donation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
