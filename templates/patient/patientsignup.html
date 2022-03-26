@@ -4,18 +4,17 @@
 {%load static%}
 
 
-<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+<div class="page-wrapper pb-5">
     <div class="wrapper wrapper--w790">
-        <br><br><br>
-        <div class="card card-5">
-            <div class="card-heading">
-                <h2 class="title">Patient Signup</h2>
-            </div>
+        <div class="my-5">
+            <h2 class="title orange-tx">Patient Signup</h2>
+        </div>
+        <div class="">
             <div class="card-body">
-                <form method="POST" autocomplete="off" enctype="multipart/form-data">
+                <form class="row justify-content-center" method="POST" autocomplete="off" enctype="multipart/form-data">
                     {% csrf_token %}
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">First Name</div>
                         <div class="value">
                             <div class="input-group">
@@ -24,7 +23,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Last Name</div>
                         <div class="value">
                             <div class="input-group">
@@ -33,7 +32,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Username</div>
                         <div class="value">
                             <div class="input-group">
@@ -42,7 +41,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Password</div>
                         <div class="value">
                             <div class="input-group">
@@ -51,7 +50,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Age</div>
                         <div class="value">
                             <div class="input-group">
@@ -60,7 +59,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Blood Group</div>
                         <div class="value">
                             <div class="input-group">
@@ -82,7 +81,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Disease</div>
                         <div class="value">
                             <div class="input-group">
@@ -91,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Doctor Name</div>
                         <div class="value">
                             <div class="input-group">
@@ -100,7 +99,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Address</div>
                         <div class="value">
                             <div class="input-group">
@@ -109,7 +108,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-6 mb-5">
                         <div class="name">Mobile</div>
                         <div class="value">
                             <div class="input-group">
@@ -118,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="col-12 mb-5">
                         <div class="name">Profile Pic</div>
                         <div class="value">
                             <div class="input-group">
@@ -127,17 +126,13 @@
                         </div>
                     </div>
 
-
-
-
-
-                    <div>
-                        <button class="btn btn--radius-2 btn-danger" type="submit">Register</button>
+                    <div class="text-center">
+                        <button class="btn btn--radius-2 btn-primary" type="submit">Sign up</button>
                     </div>
                 </form>
                 <br>
-                <p style="text-align: center;">Already have an account ? <a style="text-decoration: none;"
-                        href="/patient/patientlogin">Click here to login</a></p>
+                <p class="mt-4" style="text-align: center;">Already have an account ? <a style="text-decoration: none;"
+                        href="/patient/patientlogin">Sign in</a></p>
 
             </div>
         </div>

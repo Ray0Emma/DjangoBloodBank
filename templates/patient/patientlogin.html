@@ -3,26 +3,25 @@
 {% load widget_tweaks %}
 {%load static%}
 
-<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+<div class="page-wrapper ">
     <div class="wrapper wrapper--w790">
-        <br><br><br>
-        <div class="card card-5">
-            <div class="card-heading">
-                <h2 class="title">Patient Login</h2>
-            </div>
+        <div class="my-5">
+            <h2 class="title orange-tx">Patient Login</h2>
+        </div>
+        <div class="">
             <div class="card-body">
-                <form method="POST">
+                <orm class="row justify-content-center" method="POST">
                     {% csrf_token %}
-                    <div class="form-row">
-                        <div class="name">Username</div>
+                    <div class=" col-7 mb-5">
+                        <label class="name">Username</label>
                         <div class="value">
-                            <div class="input-group">
+                            <div class="bg-pr">
                                 {% render_field form.username class="input--style-5"%}
 
                             </div>
                         </div>
                     </div>
-                    <div class="form-row">
+                    <div class=" col-7 mb-5">
                         <div class="name">Password</div>
                         <div class="value">
                             <div class="input-group">
@@ -31,13 +30,13 @@
                         </div>
                     </div>
 
-                    <div>
-                        <button class="btn btn--radius-2 btn-danger" type="submit">Login</button>
+                    <div class="text-center">
+                        <button class="btn btn--radius-2 btn-primary " type="submit">Login</button>
                     </div>
-                </form>
-                <br>
-                <p style="text-align: center;">Does not have an account ? <a style="text-decoration: none;"
-                        href="/patient/patientsignup">Click here to register</a></p>
+                    </form>
+
+                    <p class="mt-4" style="text-align: center;">Does not have an account ? <a
+                            style="text-decoration: none;" href="/patient/patientsignup">Sign up</a></p>
 
             </div>
         </div>
