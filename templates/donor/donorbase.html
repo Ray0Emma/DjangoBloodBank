@@ -9,10 +9,13 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
 
   <style>
+    .bg-orange {
+      background-color: #A5AF98;
+    }
+
     .row {
       padding: 5px;
     }
@@ -26,22 +29,22 @@
     }
 
     .fa-users {
-      color: blue;
+      color: #2F4858;
       font-size: 3ex;
     }
 
     .fa-spinner {
-      color: blue;
+      color: #2F4858;
       font-size: 3ex;
     }
 
     .fa-check-circle {
-      color: blue;
+      color: #2F4858;
       font-size: 3ex;
     }
 
     .xyz {
-      color: blue;
+      color: #2F4858;
       font-size: 3ex;
     }
 
@@ -55,11 +58,11 @@
     }
 
     body {
-      background-color: #f3f5f9;
+      background-color: #fff;
     }
 
     .bg-danger {
-      background-color: #ff0018 !important;
+      background-color: #BEA6A1 !important;
     }
 
     .wrapper {
@@ -70,13 +73,13 @@
     .wrapper .sidebar {
       width: 200px;
       height: 100%;
-      background: #343a40;
+      background: #BEA6A1;
       padding: 30px 0px;
       position: fixed;
     }
 
     .wrapper .sidebar h2 {
-      color: #fff;
+      color: #D0A096;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 30px;
@@ -84,13 +87,13 @@
 
     .wrapper .sidebar ul li {
       padding: 15px;
-      border-bottom: 1px solid #bdb8d7;
+      /* border-bottom: 1px solid #f7d7d8;
       border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-top: 1px solid rgba(255, 255, 255, 0.05); */
     }
 
     .wrapper .sidebar ul li a {
-      color: #bdb8d7;
+      color: #56423E;
       display: block;
     }
 
@@ -99,11 +102,11 @@
     }
 
     .wrapper .sidebar ul li:hover {
-      background-color: #594f8d;
+      background-color: #fbebeb;
     }
 
     .wrapper .sidebar ul li:hover a {
-      color: #fff;
+      color: #D0A096;
     }
 
     .wrapper .sidebar .social_media {
@@ -156,7 +159,7 @@
     }
 
     .fa-sign-out-alt {
-      color: white;
+      color: #545151;
       font-size: 2ex;
     }
   </style>
@@ -165,14 +168,16 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-danger">
-    <a style="color:white;" class="navbar-brand" href="/"><i class="fab fa-gratipay"></i>&nbsp;<font
-        face="Comic sans MS" size="4">Blood Bank Management System</font></a>
+    <a style="color:#545151;" class="navbar-brand" href="/"><img src="/static/image/blood-bag.png" alt="" width="24"
+        height="24">
+      &nbsp;<font face="Comic sans MS" size="4">BM Blood Bank</font></a>
 
 
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" style="color: white;" href="/logout">Logout &nbsp; <i class="fas fa-sign-out-alt"></i></a>
+          <a class="nav-link" style="color:#545151;" href="/logout">Logout &nbsp; <i
+              class="fas fa-sign-out-alt"></i></a>
         </li>
 
       </ul>
