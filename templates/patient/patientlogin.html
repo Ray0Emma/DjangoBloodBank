@@ -10,7 +10,7 @@
         </div>
         <div class="">
             <div class="card-body">
-                <orm class="row justify-content-center" method="POST">
+                <form class="row justify-content-center" method="POST">
                     {% csrf_token %}
                     <div class=" col-7 mb-5">
                         <label class="name">Username</label>
@@ -33,10 +33,10 @@
                     <div class="text-center">
                         <button class="btn btn--radius-2 btn-primary " type="submit">Login</button>
                     </div>
-                    </form>
+                </form>
 
-                    <p class="mt-4" style="text-align: center;">Does not have an account ? <a
-                            style="text-decoration: none;" href="/patient/patientsignup">Sign up</a></p>
+                <p class="mt-4" style="text-align: center;">Does not have an account ? <a style="text-decoration: none;"
+                        href="/patient/patientsignup">Sign up</a></p>
 
             </div>
         </div>
