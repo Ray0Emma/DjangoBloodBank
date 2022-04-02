@@ -11,6 +11,17 @@
     <!-- Main CSS-->
 
     <link href="{% static "css/main.css" %}" rel="stylesheet" media="all">
+     <style>
+        .btn-primary {
+            color: #fff;
+            background: linear-gradient(to right, #e85745, #e85745);
+            border-color: #e85745 !important;
+        }
+
+        .card-heading {
+            background-color: #A5AF98 !important;
+        }
+    </style>
 </head>
 <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
     <div class="wrapper wrapper--w790">
@@ -113,8 +124,8 @@
                     </div>
 
 
-                    <div>
-                        <button class="btn btn--radius-2 btn-danger" type="submit">Update</button>
+                    <div class="mt-4" style="text-align: center;">
+                        <button class="btn btn--radius-2 btn-primary" type="submit">Update</button>
                     </div>
                 </form>
                 <br>
