@@ -28,7 +28,9 @@ SECRET_KEY = '+zy!9k=9pql5gz9bkqjore)k6r!%w0atk(@(!(!zvp5e(t2i8n'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0'
+    '*',
+    '0.0.0.0',
+    'https://bloodbankmanagement-master.herokuapp.com/',
     'bloodbankmanagement-master.herokuapp.com',
     '127.0.0.1'
 ]
