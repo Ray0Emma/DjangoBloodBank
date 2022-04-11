@@ -1,1 +1,1 @@
-web: gunicorn bloodbankmanagement-master.wsgi
+web: gunicorn bloodbankmanagement.wsgi
